@@ -1,13 +1,21 @@
-# Cache / temp stuff
+# Browsers
+mozilla/
+chromium/
+
+# Cache
+.cache/
 */cache/
+
+# Databases
+*.sqlite
+*.db
 *.log
 
-# GTK cache
-gtk-3.0/bookmarks
+# Temp/runtime
+*.pid
+*.lock
+*.wal
+*.shm
 
-# Thumbnails
+# Misc junk
 thumbnails/
-
-# Wal generated files (optional)
-wal/
-.cache/
