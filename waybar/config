@@ -1,0 +1,36 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 36,
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["custom/volume", "custom/brightness", "network", "battery", "tray"],
+
+  "clock": {
+     "format": "{:%H:%M}"
+  },
+
+  "network": {
+    "format-wifi": "{icon}",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "󰤮",
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+  },
+
+  "custom/volume": {
+    "exec": "~/.config/waybar/scripts/volume.sh",
+    "interval": 1
+  },
+
+ "custom/brightness": {
+    "exec": "~/.config/waybar/scripts/brightness.sh",
+    "interval": 1
+  },
+
+  "battery": {
+    "format": "{icon}  ",
+    "format-icons": ["", "", "", "", ""]
+  }
+}
+

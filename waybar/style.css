@@ -1,0 +1,27 @@
+* {
+  font-size: 13px;
+}
+
+window#waybar {
+  background: rgba(26, 27, 38, 0.85);
+  border-radius: 12px;
+  margin: 6px 10px;
+}
+
+#workspaces button {
+  color: #7aa2f7;
+  padding: 0 8px;
+}
+
+#workspaces button.active {
+  color: #f7768e;
+}
+
+#clock {
+  color: #bb9af7;
+}
+
+#custom-brightness, #custom-volume, #network, #battery {
+  color: #7dcfff;
+  margin: 0 6px;
+}

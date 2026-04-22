@@ -1,0 +1,13 @@
+# Cache / temp stuff
+*/cache/
+*.log
+
+# GTK cache
+gtk-3.0/bookmarks
+
+# Thumbnails
+thumbnails/
+
+# Wal generated files (optional)
+wal/
+.cache/
