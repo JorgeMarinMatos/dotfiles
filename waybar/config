@@ -5,32 +5,45 @@
 
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["custom/volume", "custom/brightness", "network", "battery", "tray"],
+  "modules-right": [
+    "pulseaudio",
+    "network",
+    "cpu",
+    "memory",
+    "battery"
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate"
+  },
 
   "clock": {
-     "format": "{:%H:%M}"
+    "format": "  {:%H:%M}",
+    "tooltip-format": "{:%A, %B %d}"
+  },
+
+  "cpu": {
+    "format": "  {usage}%"
+  },
+
+  "memory": {
+    "format": "  {}%"
   },
 
   "network": {
-    "format-wifi": "{icon}",
-    "format-ethernet": "󰈀",
-    "format-disconnected": "󰤮",
-    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
-  },
-
-  "custom/volume": {
-    "exec": "~/.config/waybar/scripts/volume.sh",
-    "interval": 1
-  },
-
- "custom/brightness": {
-    "exec": "~/.config/waybar/scripts/brightness.sh",
-    "interval": 1
+    "format-wifi": "  {signalStrength}%",
+    "format-ethernet": "󰈀  Connected",
+    "tooltip-format": "{ipaddr}"
   },
 
   "battery": {
-    "format": "{icon}  ",
-    "format-icons": ["", "", "", "", ""]
+    "format": "  {capacity}%",
+    "format-charging": " {capacity}%"
+  },
+
+  "pulseaudio": {
+    "format": "  {volume}%",
+    "format-muted": "  muted"
   }
 }
-
