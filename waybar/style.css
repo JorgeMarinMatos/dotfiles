@@ -23,6 +23,9 @@ window#waybar {
   margin: 4px 4px;
   border-radius: 10px;
   background: rgba(40, 40, 50, 0.6);
+
+  /* Neon cyan border */
+  border: 1.5px solid rgba(0, 255, 255, 0.6);
 }
 
 /* Hover effects */
@@ -32,8 +35,8 @@ window#waybar {
 #memory:hover,
 #network:hover,
 #battery:hover,
-#pulseaudio:hover {
-  background: rgba(70, 70, 90, 0.8);
+#pulseaudio:hover { 
+  background: rgba(70, 70, 90, 0.8); 
 }
 
 /* Workspaces */
